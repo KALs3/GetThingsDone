@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GetThingsDone</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/pomodoro.css">
+    <!-- Unicons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-field">
+        <textarea placeholder="Enter your new todo"></textarea>
+        <i class="uil uil-notes note-icon"></i>
+      </div>
+
+      <ul class="todoLists"></ul>
+
+      <div class="pending-tasks">
+        <span
+          >You have <span class="pending-num"> no </span> tasks pending.</span
+        >
+        <button class="clear-button">Clear All</button>
+      </div>
+    </div>
+
+    <!-- Pomodoro Timer -->
+    <div class="container">
+
+        <div class="text">
+        <p id="work" class="label">Work</p>
+        <p id="break" class="label">Break</p>
+        <p id="cycles" class="label">Cycles</p>
+      </div>
+        <!--Work Timer-->
+        <div class="final">
+        <div id="work-timer" class="timer">
+           <div class="sort">
+          <p id="w_minutes">25</p>
+            <p class="semicolon">:</p>
+            <p id="w_seconds">00</p>
+            </div>
+          </div> 
+        <!--Break Timer-->
+       
+        <div id="break-timer" class="timer">
+          <div class="no">
+            <p id="b_minutes">5</p><p class="semicolon">:</p><p id="b_seconds">00</p>
+          </div>
+        
+          </div>
+      <!--Cycle Counter-->
+        
+      <p id="counter" class="timer">0</p>
+    </div>
+        <div class="main-btn">
+        <button id="start" class="btn">Start</button>
+        <button id="stop" class="btn">Pause</button>
+        <button id="reset" class="btn">Reset</button>
+      </div>
+    </div>
+  <!-- music -->
+    <div class="container">
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/226690288&amp;show_artwork=false&show_user=false&color=0e4bf1">
+</iframe>
+
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/207140526&amp;show_artwork=false&show_user=false&color=0e4bf1">
+</iframe>
+
+    </div>
+
+    <!-- qoutes -->
+    <div class="container">
+      <h1 class="title">Quote of the day</h1>
+      <div class="content">
+        <div class="quote-area">
+          <p class="quote">We cannot solve problems with the kind of thinking we employed when we came up with them</p>
+          <div class="author">
+            <span>___</span>
+            <span class="name">Albert Einstein</span>
+          </div>
+        </div>
+        <div class="qoute-btn">
+        <button class="new-qoute-btn">New qoute</button></div>
+      </div>
+    </div>
+    <p class="links"><a href="https://github.com/KALs3" target="_blank"><i class="uil uil-github"></i></a></p>
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="/js/pomodoro.js"></script>
+    <script src="/js/qoute.js"></script>
+  </body>
+</html>
