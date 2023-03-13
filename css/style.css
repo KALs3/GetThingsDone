@@ -204,6 +204,52 @@ i{
   align-items: center;
   margin-top: 10px;
 }
+
+/* music player */
+.sound-player{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  
+}
+.uil-fire{
+  color: orange;
+  cursor: pointer;
+  font-size: 30px;
+  border: 2px solid orange;
+  border-radius: 40%;
+  padding: 10px;
+}
+.fire-playing{
+  color: rgb(100, 65, 0);
+  border: 2px solid rgb(100, 65, 0);
+
+}
+.uil-cloud-showers-alt{
+  cursor: pointer;
+  font-size: 30px;
+  border: 2px solid rgb(41, 26, 248);
+  border-radius: 40%;
+  padding: 10px;
+}
+.rain-playing{
+  border: 2px solid #04206d;
+  color: #04206d;
+}
+.uil-trees{
+  color: rgb(48, 206, 0);
+  cursor: pointer;
+  font-size: 30px;
+  border: 2px solid rgb(48, 206, 0);
+  border-radius: 40%;
+  padding: 10px;
+}
+.forest-playing{
+  border: 2px solid rgb(29, 126, 0);
+  color: rgb(29, 126, 0);
+}
+
 @media screen and (max-width: 350px) {
   .container {
     padding: 25px 10px;
